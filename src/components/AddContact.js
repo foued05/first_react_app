@@ -81,7 +81,7 @@ class AddContact extends Component {
                                                         </div>
                                                         <div class="form-group row">
                                                             <div class="col-md-9">
-                                                            <button class="btn-primary form-control text-white">Sign In</button>
+                                                            <button type='submit' class="btn-primary form-control text-white">Sign In</button>
                                                             </div>
                                                         </div>                  
                                                         </div>

@@ -38,108 +38,29 @@ class Contacts extends Component {
                                     <h4 class="text-uppercase">User Profile Cards with Stats</h4>
                                     <p>User profile cards with Stats in border & shadow variant.</p>
                                     </div>
-                                    <div class="col-xl-4 col-md-6 col-12">
-                                        <div class="card profile-card-with-stats">
-                                            <div class="text-center">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">{users[0].name}</h4>
-                                                    <ul class="list-inline list-inline-pipe">
-                                                        <li>{users[0].email}</li>
-                                                    </ul>
-                                                    <h6 class="card-subtitle text-muted">{users[0].phone}</h6>
+                                    {
+                                        users.map( (user, ind) => (
+                                            <React.Fragment key={ind}>
+                                                <div class="col-xl-4 col-md-6 col-12">
+                                                    <div class="card profile-card-with-stats">
+                                                        <div class="text-center">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">{user.name}</h4>
+                                                                <ul class="list-inline list-inline-pipe">
+                                                                    <li>{user.email}</li>
+                                                                </ul>
+                                                                <h6 class="card-subtitle text-muted">{user.phone}</h6>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <button type="button" class="btn btn-outline-danger btn-md mr-1"><i class="fa fa-plus"></i> Follow</button>
+                                                                <button type="button" class="btn btn-outline-primary btn-md mr-1"><i class="ft-user"></i> Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <button type="button" class="btn btn-outline-danger btn-md mr-1"><i class="fa fa-plus"></i> Follow</button>
-                                                    <button type="button" class="btn btn-outline-primary btn-md mr-1"><i class="ft-user"></i> Profile</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 col-12">
-                                        <div class="card profile-card-with-stats">
-                                            <div class="text-center">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">{users[0].name}</h4>
-                                                    <ul class="list-inline list-inline-pipe">
-                                                        <li>{users[0].email}</li>
-                                                    </ul>
-                                                    <h6 class="card-subtitle text-muted">{users[0].phone}</h6>
-                                                </div>
-                                                <div class="card-body">
-                                                    <button type="button" class="btn btn-outline-danger btn-md mr-1"><i class="fa fa-plus"></i> Follow</button>
-                                                    <button type="button" class="btn btn-outline-primary btn-md mr-1"><i class="ft-user"></i> Profile</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 col-12">
-                                        <div class="card profile-card-with-stats">
-                                            <div class="text-center">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">{users[0].name}</h4>
-                                                    <ul class="list-inline list-inline-pipe">
-                                                        <li>{users[0].email}</li>
-                                                    </ul>
-                                                    <h6 class="card-subtitle text-muted">{users[0].phone}</h6>
-                                                </div>
-                                                <div class="card-body">
-                                                    <button type="button" class="btn btn-outline-danger btn-md mr-1"><i class="fa fa-plus"></i> Follow</button>
-                                                    <button type="button" class="btn btn-outline-primary btn-md mr-1"><i class="ft-user"></i> Profile</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 col-12">
-                                        <div class="card profile-card-with-stats">
-                                            <div class="text-center">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">{users[0].name}</h4>
-                                                    <ul class="list-inline list-inline-pipe">
-                                                        <li>{users[0].email}</li>
-                                                    </ul>
-                                                    <h6 class="card-subtitle text-muted">{users[0].phone}</h6>
-                                                </div>
-                                                <div class="card-body">
-                                                    <button type="button" class="btn btn-outline-danger btn-md mr-1"><i class="fa fa-plus"></i> Follow</button>
-                                                    <button type="button" class="btn btn-outline-primary btn-md mr-1"><i class="ft-user"></i> Profile</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 col-12">
-                                        <div class="card profile-card-with-stats">
-                                            <div class="text-center">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">{users[0].name}</h4>
-                                                    <ul class="list-inline list-inline-pipe">
-                                                        <li>{users[0].email}</li>
-                                                    </ul>
-                                                    <h6 class="card-subtitle text-muted">{users[0].phone}</h6>
-                                                </div>
-                                                <div class="card-body">
-                                                    <button type="button" class="btn btn-outline-danger btn-md mr-1"><i class="fa fa-plus"></i> Follow</button>
-                                                    <button type="button" class="btn btn-outline-primary btn-md mr-1"><i class="ft-user"></i> Profile</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 col-12">
-                                        <div class="card profile-card-with-stats">
-                                            <div class="text-center">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">{users[0].name}</h4>
-                                                    <ul class="list-inline list-inline-pipe">
-                                                        <li>{users[0].email}</li>
-                                                    </ul>
-                                                    <h6 class="card-subtitle text-muted">{users[0].phone}</h6>
-                                                </div>
-                                                <div class="card-body">
-                                                    <button type="button" class="btn btn-outline-danger btn-md mr-1"><i class="fa fa-plus"></i> Follow</button>
-                                                    <button type="button" class="btn btn-outline-primary btn-md mr-1"><i class="ft-user"></i> Profile</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            </React.Fragment>
+                                        ))
+                                    }
                                 </section>
                             </div>
                         </div>

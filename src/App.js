@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AddContact from './components/AddContact'
 import Contacts from './components/Contacts'
+import LocalContacts from './components/LocalContacts'
 
 class App extends Component {
 
@@ -26,6 +27,8 @@ class App extends Component {
               </button>
               <button class=" nav-item btn" onClick={() => this.setState({renderView: 2})}><a href="#"><i className="ft-edit"></i><span class="menu-title" data-i18n="">Add new contact</span></a>
               </button>
+              <button class=" nav-item btn" onClick={() => this.setState({renderView: 3})}><a href="#"><i className="ft-edit"></i><span class="menu-title" data-i18n="">Work locally</span></a>
+              </button>
             </ul>
           </div>
         </div>
@@ -43,10 +46,31 @@ class App extends Component {
               </button>
               <button class=" nav-item btn"  onClick={() => this.setState({renderView: 2})}><a href="#"><i className="ft-edit"></i><span class="menu-title" data-i18n="">Add new contact</span></a>
               </button>
+              <button class=" nav-item btn" onClick={() => this.setState({renderView: 3})}><a href="#"><i className="ft-edit"></i><span class="menu-title" data-i18n="">Work locally</span></a>
+              </button>
             </ul>
           </div>
         </div>
         <AddContact />
+      </>
+      )
+      case 3: return (
+        <>
+        <div className="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+          <div className="main-menu-content">
+            <ul className="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+              <li className=" navigation-header"><span>Menu</span><i className=" ft-minus" data-toggle="tooltip" data-placement="right" data-original-title="Apps"></i>
+              </li>
+              <button class=" nav-item btn"  onClick={() => this.setState({renderView: 1})}><a href="#"><i className="ft-users"></i><span class="menu-title" data-i18n="">Contacts</span></a>
+              </button>
+              <button class=" nav-item btn"  onClick={() => this.setState({renderView: 2})}><a href="#"><i className="ft-edit"></i><span class="menu-title" data-i18n="">Add new contact</span></a>
+              </button>
+              <button class=" nav-item btn" onClick={() => this.setState({renderView: 3})}><a href="#"><i className="ft-edit"></i><span class="menu-title" data-i18n="">Work locally</span></a>
+              </button>
+            </ul>
+          </div>
+        </div>
+        <LocalContacts />
       </>
       )
       
